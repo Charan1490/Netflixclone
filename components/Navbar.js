@@ -22,13 +22,13 @@ export default function Navbar() {
   return (
     <nav
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        scrolled ? 'bg-netflix-black' : 'bg-gradient-to-b from-black/80 to-transparent'
+        scrolled ? 'bg-streamflix-darker backdrop-blur-lg border-b border-streamflix-primary/20' : 'bg-gradient-to-b from-black/90 to-transparent'
       }`}
     >
       <div className="flex items-center justify-between px-4 md:px-12 py-4">
         <div className="flex items-center gap-8">
-          <Link href="/browse" className="text-netflix-red text-3xl font-bold">
-            NETFLIX
+          <Link href="/browse" className="text-3xl font-bold bg-gradient-to-r from-streamflix-primary via-streamflix-secondary to-streamflix-accent bg-clip-text text-transparent">
+            STREAMFLIX
           </Link>
           
           <div className="hidden md:flex gap-6">

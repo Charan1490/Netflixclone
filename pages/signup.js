@@ -51,18 +51,18 @@ export default function Signup() {
 
       <div className="relative z-10">
         <div className="px-8 py-6">
-          <Link href="/" className="text-netflix-red text-5xl font-bold">
-            NETFLIX
+          <Link href="/" className="text-5xl font-bold bg-gradient-to-r from-streamflix-primary via-streamflix-secondary to-streamflix-accent bg-clip-text text-transparent">
+            STREAMFLIX
           </Link>
         </div>
 
         <div className="flex items-center justify-center min-h-[calc(100vh-100px)]">
-          <div className="bg-black/75 p-12 md:p-16 rounded-lg w-full max-w-md">
-            <h1 className="text-3xl font-bold mb-8">Sign Up</h1>
+          <div className="bg-black/80 backdrop-blur-xl border border-streamflix-primary/30 p-12 md:p-16 rounded-2xl w-full max-w-md shadow-2xl">
+            <h1 className="text-4xl font-bold mb-8 bg-gradient-to-r from-streamflix-primary to-streamflix-secondary bg-clip-text text-transparent">Sign Up</h1>
 
             {error && (
-              <div className="bg-netflix-red/20 border border-netflix-red text-white p-3 rounded mb-4">
-                {error}
+              <div className="bg-gradient-to-r from-red-500/20 to-pink-500/20 backdrop-blur-sm border border-red-500/50 text-white p-4 rounded-lg mb-4 shadow-lg">
+                ⚠️ {error}
               </div>
             )}
 
@@ -73,7 +73,7 @@ export default function Signup() {
                   placeholder="Full Name"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
-                  className="w-full px-4 py-3 bg-netflix-gray text-white rounded focus:outline-none focus:ring-2 focus:ring-white"
+                  className="w-full px-4 py-3 bg-streamflix-dark/50 backdrop-blur-sm border border-streamflix-primary/30 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-streamflix-primary focus:border-transparent transition-all"
                   required
                 />
               </div>
@@ -84,7 +84,7 @@ export default function Signup() {
                   placeholder="Email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="w-full px-4 py-3 bg-netflix-gray text-white rounded focus:outline-none focus:ring-2 focus:ring-white"
+                  className="w-full px-4 py-3 bg-streamflix-dark/50 backdrop-blur-sm border border-streamflix-primary/30 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-streamflix-primary focus:border-transparent transition-all"
                   required
                 />
               </div>
@@ -95,7 +95,7 @@ export default function Signup() {
                   placeholder="Password (min 6 characters)"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
-                  className="w-full px-4 py-3 bg-netflix-gray text-white rounded focus:outline-none focus:ring-2 focus:ring-white"
+                  className="w-full px-4 py-3 bg-streamflix-dark/50 backdrop-blur-sm border border-streamflix-primary/30 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-streamflix-primary focus:border-transparent transition-all"
                   required
                   minLength={6}
                 />
@@ -104,7 +104,7 @@ export default function Signup() {
               <button
                 type="submit"
                 disabled={loading}
-                className="w-full bg-netflix-red text-white py-3 rounded font-bold hover:bg-netflix-red/90 transition disabled:opacity-50"
+                className="w-full bg-gradient-to-r from-streamflix-primary to-streamflix-secondary text-white py-3 rounded-full font-bold hover:shadow-xl hover:scale-105 transition-all disabled:opacity-50 disabled:hover:scale-100"
               >
                 {loading ? 'Creating Account...' : 'Sign Up'}
               </button>

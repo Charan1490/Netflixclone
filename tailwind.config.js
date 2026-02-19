@@ -13,6 +13,13 @@ module.exports = {
           black: '#141414',
           gray: '#2F2F2F',
         },
+        streamflix: {
+          primary: '#8B5CF6',
+          secondary: '#EC4899',
+          dark: '#0F172A',
+          darker: '#020617',
+          accent: '#3B82F6',
+        },
       },
     },
   },

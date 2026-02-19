@@ -116,9 +116,9 @@ You'll need to create your own account through the signup page.
 
 1. Visit the app
 2. Sign up for a new account
-3. Browse movies and TV shows
+3. Browse movies and TV shows with **real beautiful images**
 4. Add items to your list
-5. Enjoy your personalized Netflix experience!
+5. Enjoy your personalized StreamFlix experience!
 
 ## 🤝 Contributing
 
@@ -126,7 +126,7 @@ Feel free to fork this project and submit pull requests!
 
 ## 📄 License
 
-This project is for educational purposes only. Netflix is a trademark of Netflix, Inc.
+This project is for educational purposes only.
 
 ## 🐛 Troubleshooting
 
@@ -146,4 +146,4 @@ For issues or questions, please open an issue on GitHub.
 
 ---
 
-Made with ❤️ using Next.js and MongoDB
+Made with ❤️ using Next.js, MongoDB, and beautiful Unsplash images

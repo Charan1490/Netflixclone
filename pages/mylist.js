@@ -16,9 +16,12 @@ export default function MyList() {
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-netflix-black flex items-center justify-center">
-        <div className="text-netflix-red text-6xl font-bold animate-pulse">
-          NETFLIX
+      <div className="min-h-screen bg-gradient-to-br from-streamflix-darker via-streamflix-dark to-streamflix-darker flex items-center justify-center">
+        <div className="text-center">
+          <div className="text-6xl font-bold bg-gradient-to-r from-streamflix-primary via-streamflix-secondary to-streamflix-accent bg-clip-text text-transparent animate-pulse mb-4">
+            STREAMFLIX
+          </div>
+          <div className="text-gray-400 animate-pulse">Loading your list...</div>
         </div>
       </div>
     );
@@ -31,7 +34,7 @@ export default function MyList() {
   const myListMovies = user.myList || [];
 
   return (
-    <div className="min-h-screen bg-netflix-black text-white">
+    <div className="min-h-screen bg-gradient-to-b from-streamflix-darker via-streamflix-dark to-streamflix-darker text-white">
       <Navbar />
       
       <div className="pt-24 px-12">
@@ -65,7 +68,7 @@ export default function MyList() {
         )}
       </div>
 
-      <footer className="bg-netflix-black py-12 px-12 mt-16 border-t border-gray-800">
+      <footer className="bg-streamflix-darker py-12 px-12 mt-16 border-t border-streamflix-primary/20">
         <div className="max-w-7xl mx-auto">
           <div className="text-gray-500 space-y-4">
             <p>Questions? Contact us.</p>

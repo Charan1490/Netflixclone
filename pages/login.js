@@ -44,8 +44,8 @@ export default function Login() {
 
       <div className="relative z-10">
         <div className="px-8 py-6">
-          <Link href="/" className="text-netflix-red text-5xl font-bold">
-            NETFLIX
+          <Link href="/" className="text-5xl font-bold bg-gradient-to-r from-streamflix-primary via-streamflix-secondary to-streamflix-accent bg-clip-text text-transparent">
+            STREAMFLIX
           </Link>
         </div>
 
@@ -54,8 +54,8 @@ export default function Login() {
             <h1 className="text-3xl font-bold mb-8">Sign In</h1>
 
             {error && (
-              <div className="bg-netflix-red/20 border border-netflix-red text-white p-3 rounded mb-4">
-                {error}
+              <div className="bg-gradient-to-r from-red-500/20 to-pink-500/20 backdrop-blur-sm border border-red-500/50 text-white p-4 rounded-lg mb-4 shadow-lg">
+                ⚠️ {error}
               </div>
             )}
 
@@ -66,7 +66,7 @@ export default function Login() {
                   placeholder="Email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="w-full px-4 py-3 bg-netflix-gray text-white rounded focus:outline-none focus:ring-2 focus:ring-white"
+                  className="w-full px-4 py-3 bg-streamflix-dark/50 backdrop-blur-sm border border-streamflix-primary/30 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-streamflix-primary focus:border-transparent transition-all"
                   required
                 />
               </div>
@@ -77,7 +77,7 @@ export default function Login() {
                   placeholder="Password"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
-                  className="w-full px-4 py-3 bg-netflix-gray text-white rounded focus:outline-none focus:ring-2 focus:ring-white"
+                  className="w-full px-4 py-3 bg-streamflix-dark/50 backdrop-blur-sm border border-streamflix-primary/30 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-streamflix-primary focus:border-transparent transition-all"
                   required
                 />
               </div>
@@ -85,7 +85,7 @@ export default function Login() {
               <button
                 type="submit"
                 disabled={loading}
-                className="w-full bg-netflix-red text-white py-3 rounded font-bold hover:bg-netflix-red/90 transition disabled:opacity-50"
+                className="w-full bg-gradient-to-r from-streamflix-primary to-streamflix-secondary text-white py-3 rounded-full font-bold hover:shadow-xl hover:scale-105 transition-all disabled:opacity-50 disabled:hover:scale-100"
               >
                 {loading ? 'Signing In...' : 'Sign In'}
               </button>
